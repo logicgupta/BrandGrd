@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="#f2f2f2"
+android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context=".View.Login.RegisterActivity">
+
+<ImageView
+    android:layout_marginTop="15dp"
+    android:layout_width="110dp"
+    android:src="@mipmap/logo"
+    android:layout_gravity="center"
+    android:layout_height="110dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="12dp"
+    android:text="@string/brandmore"
+    android:textSize="24sp"
+    android:layout_height="wrap_content" />
+
+
+<EditText
+    android:id="@+id/userNameEditText"
+    android:layout_marginTop="30dp"
+    android:layout_width="280dp"
+    android:hint="   Username"
+    android:drawableLeft="@drawable/ic_person_black_24dp"
+    android:padding="8dp"
+    android:elevation="4dp"
+    android:inputType="textPersonName"
+    android:background="@drawable/edit_text_design_simple"
+    android:layout_gravity="center"
+    android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/emailEdiText"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:hint="   Email Id"
+        android:background="@drawable/edit_text_design_simple"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/mobileEdiText"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:hint="   Mobile Number"
+        android:background="@drawable/edit_text_design_simple"
+        android:padding="8dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:elevation="4dp"
+        android:drawableLeft="@drawable/ic_phone_in_talk_black_24dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/passwordEdiText"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:hint="   Password"
+        android:inputType="textWebPassword"
+        android:background="@drawable/edit_text_design_simple"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+
+<Button
+    android:id="@+id/registerButton"
+    android:layout_width="280dp"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/button_design_login"
+    android:layout_gravity="center"
+    android:text="REGISTER"
+    android:elevation="4dp"
+    android:textColor="#ffff"
+    android:textStyle="bold"
+    android:layout_height="50dp" />
+
+
+</LinearLayout>

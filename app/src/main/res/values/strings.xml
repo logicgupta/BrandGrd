@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BrandMore Seller</string>
+    <string name="brandmore">BrandMore</string>
+    <string name="title_activity_admin_home_pannnel">AdminHomePannnel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_client_pannel">ClientPannelActivity</string>
+    <string name="add_the_services">Add The Services</string>
+    <string name="title_activity_admin_pannel">AdminPannel</string>
+    <string name="title_activity_clientpannel">Clientpannel</string>
+    <string name="imageTitle">Image Title</string>
+    <string name="imageDesc">Image Description</string>
+</resources>

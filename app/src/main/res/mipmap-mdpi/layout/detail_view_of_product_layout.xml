@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="4dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detailProductViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/detailProductIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="bottom"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="#df0623"
+            app:pageColor="#fff"
+            app:snap="false" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/detailProductNameTextView"
+        android:layout_width="match_parent"
+        android:text="@string/productName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/detailProductDescriptionTextView"
+        android:layout_width="match_parent"
+        android:text="@string/description"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:gravity=""
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/detailProductAddButton"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:layout_width="110dp"
+        android:layout_gravity="center"
+        android:background="@drawable/red_color_button_design"
+        android:textColor="#ffff"
+        android:text="ADD    +"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/detailProductminusButton"
+            android:layout_width="40dp"
+            android:textSize="20dp"
+            android:text="-"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/detailProductQuantityTextView"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/detailProductPlusButton"
+            android:layout_width="40dp"
+            android:textSize="20dp"
+            android:text="+"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
