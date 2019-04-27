@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/orderIdTextView"
+         android:layout_width="match_parent"
+         android:textSize="18sp"
+         android:text="Order Id"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         />
+     <TextView
+         android:id="@+id/purchasedDateTextView"
+         android:layout_width="match_parent"
+         android:textSize="16sp"
+         android:text="Date"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         />
+     <TextView
+         android:id="@+id/paymentTextView"
+         android:layout_width="match_parent"
+         android:textSize="16sp"
+         android:text="Payment Type"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         />
+     <TextView
+         android:id="@+id/deliveryInitiatedTextView"
+         android:layout_width="match_parent"
+         android:textSize="16sp"
+         android:text="Delivery"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         />
+     <TextView
+         android:id="@+id/deliveryEmailTextView"
+         android:layout_width="match_parent"
+         android:textSize="16sp"
+         android:text="Email Id"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         />
+ </LinearLayout>
+</androidx.cardview.widget.CardView>

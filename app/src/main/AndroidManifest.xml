@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.splashactivity">
+    package="com.logistic.splashactivity">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -10,12 +11,66 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo6"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo6"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Client.AddItems.AddProductActivity"></activity>
+        <activity android:name=".View.Client.WinterSaleActivity"></activity>
+        <activity android:name=".View.Client.SummerDealActivity" />
+        <activity android:name=".View.Client.BestSellingActivity" />
+        <activity android:name=".View.Admin.AdminDeliverOrderListActivity" />
+        <activity android:name=".View.Admin.DeliverPersonListActivity" />
+        <activity android:name=".View.Client.Delivery.AllDeliverPersonActivity" />
+        <activity android:name=".View.DeliveryBoy.UpdateOrder.UpdateOrderDeliverDetailActivity" />
+        <activity android:name=".View.DeliveryBoy.UpdateOrder.UpdateOrderDeliverListActivity" />
+
+        <meta-data
+            android:name="sendotp.key"
+            android:value="271173Aa2sPsaGy6zq5ca86df3" />
+
+        <activity android:name=".View.Login.RegisterDeliverActivity" />
+        <activity android:name=".View.DeliveryBoy.Profile.DeliverBoyProfileActivity" />
+        <activity android:name=".View.DeliveryBoy.orderSuccess.OrderSuccessDeliveredDetailsActivity" />
+        <activity android:name=".View.DeliveryBoy.orderPickUp.UpdateOrderPickUpActivity" />
+        <activity android:name=".View.DeliveryBoy.orderPickUp.OrderPickUpActivity" />
+        <activity android:name=".View.DeliveryBoy.orderSuccess.OrderSuccessDeliveredActivity" />
+        <activity android:name=".View.DeliveryBoy.orderDeliver.OrderDetailsDeliverActivity" />
+        <activity android:name=".View.DeliveryBoy.orderDeliver.OrderListDeliverActivity" />
+        <activity android:name=".View.Admin.ClientCancel.ClientOrderDetailsActivity" />
+        <activity android:name=".View.Admin.ClientCancel.ClientApprovedOrderRequest" />
+        <activity
+            android:name=".View.DeliveryBoy.HomeActivty"
+            android:label="@string/title_activity_home_activty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.Client.ViewMilkProducts.ViewMilkProductActivity" />
+        <activity android:name=".View.Client.MilkDiary.MilkDairyCategory" />
+        <activity android:name=".View.Client.MilkDiary.MilkDiaryActivity" />
+        <activity android:name=".View.Admin.NewProduct.NewProductRequestActivity" />
+        <activity android:name=".View.Admin.SpecialDeal.AdminAddDeals" />
+        <activity android:name=".View.Client.DealOfDay.AddDealProductActivity" />
+        <activity android:name=".View.Client.Delivery.UpdateDeliveryOrderDetailsActivty" />
+        <activity android:name=".View.Client.Delivery.UpdateDeliveryOrderListActivity" />
+        <activity android:name=".View.Client.OrderDetails.ApprovedOrderDetailsActivity" />
+        <activity android:name=".View.Client.OrderDetails.ApprovedOrderListActivity" />
+        <activity android:name=".View.Admin.ClientCancel.ClientCancelOrderDetailsActivity" />
+        <activity android:name=".View.Admin.ClientCancel.ClientCancelOrderActivity" />
+        <activity android:name=".View.Client.OrderRequest.ClientOrderListActivity" />
+        <activity android:name=".View.Client.MyAccount.ProfileActivity" />
+        <activity android:name=".View.Admin.SellersListActivity" />
+        <activity android:name=".View.Client.OrderRequest.OrderRequestActivity" />
+        <activity android:name=".View.Client.ViewProduct.ProductList" />
+        <activity android:name=".View.Client.AddItems.AddProductClientCategory" />
+        <activity android:name=".View.Admin.CancelOrderList" />
+        <activity android:name=".View.Admin.CancelOrderRequest" />
+        <activity android:name=".View.Admin.OrderDetailsActivity" />
+        <activity android:name=".View.Admin.ViewProductActivity" />
+        <activity android:name=".View.Admin.CategoryOfProductList" />
+        <activity android:name=".View.Admin.AddSpecialDeals" />
+        <activity android:name=".View.Admin.OrderListActivity" />
+        <activity android:name=".View.Admin.AdminAddItems" />
+        <activity android:name=".View.Admin.AdminAddProductsActivity" />
+        <activity android:name=".View.Client.AddItems.AddProductActivity" />
         <activity android:name=".View.Admin.CoverImagesActivity" />
         <activity
             android:name=".View.Client.Clientpannel"
@@ -34,6 +89,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".View.Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".View.Notification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

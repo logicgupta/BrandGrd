@@ -9,230 +9,411 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_admin_pannel">
 
-    <LinearLayout
-        android:clipToPadding="false"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="4dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:clipToPadding="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="4dp"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_height="wrap_content">
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/listSaloon"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                android:layout_width="150dp"
-                app:cardBackgroundColor="#4c8ffb"
-                android:layout_height="140dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_store_mall_directory_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/listSaloon"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#4c8ffb"
+                    android:layout_height="145dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_control_point_duplicate_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+                            android:text="Add Products"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/appointment"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#FF0000"
+                    android:background="#FF0000"
+                    android:layout_width="150dp"
+                    android:layout_height="145dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_access_time_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+                            android:text="Cancel Order  Request"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/orderCancelled"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#32CD32"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_cancel_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:text="Seller Cancelled Order Request"/>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/dailyReport"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#4c8ffb"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_show_chart_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center"
+                            android:text="View Products"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/settleReport"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#FF0000"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_assignment_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#FFF"
+                            android:text="Approve Orders"/>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/employees"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#32CD32"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center"
+                            android:text="Deal of the Day"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sellers"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#4c8ffb">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFF"
-                        android:layout_gravity="center"
-                        android:text="Sellers List"/>
+                        android:orientation="vertical">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_person_white_24dp" />
 
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/appointment"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                app:cardBackgroundColor="#FF0000"
-                android:background="#FF0000"
-                android:layout_width="150dp"
-                android:layout_height="140dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Our Clients"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sellerCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FF0000">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_access_time_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFF"
-                        android:layout_gravity="center"
-                        android:text="Seller Request"/>
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_check_box_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Client Approved Order"
+                            android:textColor="#FFFFFF"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/customer"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#32CD32"
+                    android:layout_height="140dp">
 
-        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_perm_media_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#FFF"
+                            android:text="Cover Images"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/newOrder"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#32CD32"
+                    android:layout_height="140dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_info_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:text="Client New  Order Request"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/customer"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                android:layout_width="150dp"
-                app:cardBackgroundColor="#32CD32"
-                android:layout_height="140dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/deliever"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#4c8ffb"
+                    android:layout_height="145dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_perm_media_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:textColor="#FFF"
-                        android:text="Cover Images"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
 
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/dailyReport"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                android:layout_width="150dp"
-                app:cardBackgroundColor="#4c8ffb"
-                android:layout_height="140dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_show_chart_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFF"
-                        android:layout_gravity="center"
-                        android:text="Reports"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/settleReport"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                android:layout_width="150dp"
-                app:cardBackgroundColor="#FF0000"
-                android:layout_height="140dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_assignment_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:textColor="#FFF"
-                        android:text="Settle Reports"/>
-
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:clickable="true"
-                android:id="@+id/employees"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_margin="12dp"
-                android:layout_width="150dp"
-                app:cardBackgroundColor="#32CD32"
-                android:layout_height="140dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="74dp"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ic_add_circle_outline_black_24dp"
-                        android:layout_height="74dp"
-                        android:layout_gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFF"
-                        android:layout_gravity="center"
-                        android:text="Add Coupons"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-    </LinearLayout>
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_directions_bike_black_24dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="All  Delivery Of Orders"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+</LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

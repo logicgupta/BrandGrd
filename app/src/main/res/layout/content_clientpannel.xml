@@ -9,6 +9,6 @@
     tools:context=".View.Client.Clientpannel"
     tools:showIn="@layout/app_bar_clientpannel">
 
-    <include layout="@layout/activity_client_home"/>
+    <include layout="@layout/seller_admin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

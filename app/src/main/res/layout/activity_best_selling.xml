@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".View.Client.AddItems.AddProductActivity">
+    tools:context=".View.Client.DealOfDay.AddDealProductActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="120dp">
                     <ImageView
                         android:id="@+id/imageUrl1"
                         android:layout_width="0dp"
@@ -41,7 +41,7 @@
                 <LinearLayout
                     android:layout_margin="2dp"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="120dp">
                     <ImageView
                         android:id="@+id/imageUrl3"
                         android:layout_width="0dp"
@@ -82,8 +82,8 @@
                 <EditText
                     android:id="@+id/editquantity"
                     android:layout_width="0dp"
-                    android:layout_weight="1.5"
-                    android:hint="Quanity in Pack"
+                    android:layout_weight="1.9"
+                    android:hint="Quantity of 1 packet"
                     android:textSize="24sp"
                     android:padding="4dp"
                     android:layout_margin="8dp"
@@ -135,14 +135,14 @@
                 android:hint="Quantity Available At Our Store"
                 android:layout_height="wrap_content" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:text="SUBMIT"
-                    android:id="@+id/buttonSubmit"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:textSize="24sp"
-                    android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/buttonSubmit"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

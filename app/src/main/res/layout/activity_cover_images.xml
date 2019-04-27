@@ -9,6 +9,7 @@
     tools:context=".View.Admin.CoverImagesActivity">
     <ImageView
         android:id="@+id/addImages"
+        android:src="@drawable/ic_menu_camera"
         android:layout_width="match_parent"
         android:layout_height="300dp" />
 

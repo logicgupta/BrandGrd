@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageViewOffers"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:layout_height="150dp"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:hint="Title"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/descEditText"
+            android:layout_width="match_parent"
+            android:hint="Description"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:id="@+id/deleteImage"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_width="40dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:layout_height="40dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -4,9 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".View.Client.AddItems.AddProductActivity">
+    android:layout_height="match_parent"
+    tools:context=".View.Admin.AdminAddItems">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Select Image Of Product From Gallery"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -82,10 +89,11 @@
                 <EditText
                     android:id="@+id/editquantity"
                     android:layout_width="0dp"
-                    android:layout_weight="1.5"
-                    android:hint="Quanity in Pack"
+                    android:layout_weight="1"
+                    android:hint="Quanity in Kg"
                     android:textSize="24sp"
                     android:padding="4dp"
+                    android:inputType="number"
                     android:layout_margin="8dp"
                     android:layout_height="wrap_content" />
                 <EditText
@@ -135,14 +143,15 @@
                 android:hint="Quantity Available At Our Store"
                 android:layout_height="wrap_content" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:text="SUBMIT"
-                    android:id="@+id/buttonSubmit"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:textSize="24sp"
-                    android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/buttonSubmit"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
