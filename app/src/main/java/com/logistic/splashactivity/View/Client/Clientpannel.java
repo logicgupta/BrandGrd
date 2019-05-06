@@ -167,7 +167,9 @@ String name;
         cardViewsummerDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(Clientpannel.this,SummerDealActivity.class);
+                intent.putExtra("activity","Yes");
+                startActivity(intent);
             }
         });
 

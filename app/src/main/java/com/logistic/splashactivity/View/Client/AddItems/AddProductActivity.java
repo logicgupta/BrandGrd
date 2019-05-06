@@ -230,7 +230,7 @@ public class AddProductActivity extends AppCompatActivity {
             Bitmap mBitmap = null;
             try {
                 mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri1);
-                Bitmap newBitmap=getScaledDownBitmap(mBitmap,500,false);
+                Bitmap newBitmap=getScaledDownBitmap(mBitmap,250,false);
                 imageView1.setImageBitmap(newBitmap);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -244,7 +244,7 @@ public class AddProductActivity extends AppCompatActivity {
               Bitmap mBitmap = null;
               try {
                   mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri2);
-                  Bitmap newBitmap=getScaledDownBitmap(mBitmap,500,false);
+                  Bitmap newBitmap=getScaledDownBitmap(mBitmap,200,false);
                   imageView2.setImageBitmap(newBitmap);
               } catch (IOException e) {
                   e.printStackTrace();
@@ -260,7 +260,7 @@ public class AddProductActivity extends AppCompatActivity {
              Bitmap mBitmap = null;
              try {
                  mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri3);
-                 Bitmap newBitmap=getScaledDownBitmap(mBitmap,500,false);
+                 Bitmap newBitmap=getScaledDownBitmap(mBitmap,200,false);
                  imageView3.setImageBitmap(newBitmap);
              } catch (IOException e) {
                  e.printStackTrace();
@@ -274,7 +274,7 @@ public class AddProductActivity extends AppCompatActivity {
              Bitmap mBitmap = null;
              try {
                  mBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri4);
-                 Bitmap newBitmap=getScaledDownBitmap(mBitmap,500,false);
+                 Bitmap newBitmap=getScaledDownBitmap(mBitmap,200,false);
                  imageView4.setImageBitmap(newBitmap);
              } catch (IOException e) {
                  e.printStackTrace();

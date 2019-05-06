@@ -13,6 +13,7 @@ import com.logistic.splashactivity.R;
 import com.logistic.splashactivity.View.Admin.ClientCancel.ClientApprovedOrderRequest;
 import com.logistic.splashactivity.View.Admin.ClientCancel.ClientCancelOrderActivity;
 import com.logistic.splashactivity.View.Admin.NewProduct.NewProductRequestActivity;
+import com.logistic.splashactivity.View.Admin.Support.ListTicketSupportActivity;
 import com.logistic.splashactivity.View.Login.LoginActvity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,9 +61,10 @@ public class AdminPannel extends AppCompatActivity {
 
         cardViewCoverImages.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {                       // Support and Chat Service
 
-                startActivity(new Intent(AdminPannel.this,CoverImagesActivity.class));
+                //startActivity(new Intent(AdminPannel.this,CoverImagesActivity.class));
+                startActivity(new Intent(AdminPannel.this, ListTicketSupportActivity.class));
 
             }
         });
@@ -131,6 +133,8 @@ public class AdminPannel extends AppCompatActivity {
                 startActivity(new Intent(AdminPannel.this,DeliverPersonListActivity.class));
             }
         });
+
+
 
     }
 

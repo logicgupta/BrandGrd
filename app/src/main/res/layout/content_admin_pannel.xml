@@ -330,7 +330,7 @@
                         <ImageView
                             android:layout_width="74dp"
                             android:layout_margin="8dp"
-                            android:src="@drawable/ic_perm_media_black_24dp"
+                            android:src="@drawable/ic_headset_mic_black_24dp"
                             android:layout_height="74dp"
                             android:layout_gravity="center"
                             />
@@ -341,7 +341,7 @@
                             android:textStyle="bold"
                             android:layout_gravity="center"
                             android:textColor="#FFF"
-                            android:text="Cover Images"/>
+                            android:text="Support &amp; Help"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -411,7 +411,78 @@
                             android:text="All  Delivery Of Orders"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/bestDetails"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#4c8ffb"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Best Selling Items"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:id="@+id/summerDetails"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="12dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#FF0000"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp"
+                            android:layout_height="74dp"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center"
+                            android:text="Summer Deals Items"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
 </LinearLayout>
     </ScrollView>
 
