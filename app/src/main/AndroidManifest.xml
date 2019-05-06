@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/logo6"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Admin.Support.DetailChatActivity"></activity>
+        <activity android:name=".View.BestSelling.AdminAddBestSellingActivity"></activity>
+        <activity android:name=".View.Admin.seasonDeal.AdminAddSeasonDeals" />
+        <activity android:name=".View.Admin.Support.DetailChatActivity" />
         <activity android:name=".View.Admin.Support.ListTicketSupportActivity" />
         <activity android:name=".View.Client.WinterSaleActivity" />
         <activity android:name=".View.Client.SummerDealActivity" />
